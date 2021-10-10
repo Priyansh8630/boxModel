@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            background-color: rgb(184, 248, 248);
+        }
+        h1 {
+            color: forestgreen;
+            font-size: 70px;
+        }
+        .box {
+            margin: 50px 100px 50px 100px;
+            border: 10px;
+            border-style: double;
+            border-color: brown;
+            padding: 30px 100px 50px 100px;
+            background-color: cyan;
+        }
+        p {
+            font-size: xx-large;
+            color: crimson;
+            padding: 40px;
+            border: 5px;
+            border-style: dotted;
+        }
+        img {
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>BOX MODEL</h1>
+        <div class="box">
+            <p><em>
+                Box model is used when talking about design and layout. 
+                The CSS box model is essentially a box that wraps around every HTML element. 
+                It consists of: margins, borders, padding, and the actual content.
+            </em></p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAADACAMAAAA+71YtAAAAhFBMVEX////MzMwAAADn5+fi4uLR0dH5+fnV1dXJycnNzc309PRvb2+tra2Pj4+qqqqVlZWioqJmZmZ6enqZmZlXV1dycnLa2tpdXV02Nja1tbXg4OCHh4dQUFDu7u7AwMBqamo9PT1EREQtLS1KSkoaGholJSVBQUEYGBiBgYELCwsvLy8SEhLd7USjAAAI6klEQVR4nO2dC3eivBZAQzAEEAQBhcjLF621////3ROOdvw6pXa4CtFmrzULPTIQdvPiCEioRkLGLoAigAei0R4Q7QHRHpCBPYReKRflrOpcpXIGK80FA3ugdCYXPk06V1nEg5XmgsE9zC1YZDQdbp8/YmgPEZ1A1T8mUB8m9SarIRZ53j4kbpCtgwhqSx5CnRD2yzayhivX4B4cCtU+n0fgQXiGeIV3SZMKTha0MnLqE5LmhOw2mRfScLhyDe5hudgSl/LpqX+YHsBD4hLCqCDELaQH+LdbQ3eaLoYr1+AeVhXl7NWtpQcW5Fv44xeyY5xRduFhA1XBmj+zh6V7jNOQSA9+E/Piw8PbL/NA6u3ekR5W1IZ2cfZgy3dl84s8cLohVuvBN0WzsNADSWnlNftf5IHYS2KlOzmZokVI5+QlkJ+UEV3bCThIoIpkoMZK6uHKNer5RWkSYrqXgb0YqSjqnGdVNinn45VEGQ9x8b5fTEbbvTIeiGuWI+5dHQ/joj0g33gozeejjwduPx+dp/LfeTCeDu0BeQwPjnPvPSjjwWFA1+EKcW8RqnhwvLquF4J9+Vm1Tr/84Iao4oEFtE4bOvvqeB17N/9FHpZcvB6Y4XBAHja0E1g6jHNDepAvODQP3oZvjUIe4Oi2PnOqgtLXgBmsmEZ0zquE0mJdM8eeU7quHH48zGl0cxEKeViKdGc7fLf1REQF4wVNPMGTRr6tGYuOnlgvwMPb3Ktu3m0q4yGmr/ToMViGjMmOkRcFNI0ZjTmD/oGL92C5DN4qvk27x5X+KOMhoJVI3wKev0FfydJNxXcLeOGDFtlP8hldF8WaCt7k9+gzFfIAHeB6b3d7iOIgju3n97Bk/IXaIY1P7aL1ENKAw9uai+YgRwrn+T3EQU1Tg22yWbWgHnpwjG0WxzvZT/o0F15QPbuHuDluj9PKcarkmGWxbBswmTCY99I0eQoDpZNDfAfNxX9mDwZrp08wEDi8Eqd5VBtnwmbtS+aICiZSd5hEGQp5uODT2eWft3c87VTRwxhoD4j2gGgPyC09tCklmP0xxDaYioG7e3Cqejqd1hU5TCWRy9plLX4eKHlnIP9xYIkBj/jnwOIcgAJ2ZHRuWR+WXZtSift7cMRo1yj8A97Xc5BbevCGvKyxL6WtPUgW928XD+FhgP7hth7YubdZerfcrMoe+Ga320WfLno57E8vZlAK/tpz038xhIe+fziDCi+nG/c/wfx4eiE9mEHPTf/FAPMH1vd2AEPuJ6cT4pp4KZRlmq7feoAXnvwUwlb5caVUaZpW2W9vA3iw+17U1nqIqcmPzRs14Ihrut2mGZFXlDZ7ec0gg38V5Q3etSPo6/uU8l77Unm8kB5WLy/uxLTcOoWjP06IuQUPHhxsmXx42Bjk8O6SJciw4p4eJh1/QxU8ODQ4UIrT8rAABT6RMoi1kzcpeR8e5A07tCQLWaxJTw8dX4Up4iGKBBTECtdFk8LfW3a40E9aNCfYT6IHgh52O3ix6ulB5XHTOO3nkHHXT9p6f/JwIJf1gaCHRPYcfevDA3hwZT0AD+V6AXVD9pPJGsKHzx5mdEXKw/N6sNaZd3jbchhC/VnSHGWTOHjz42cP7mYfZbW6Hqp+JYO2Xp+XRVzKASNOElHJvkGkxcyIcA0eyV1HcrYV5mxF+6U7HiMPIztLWSLrXCzL7VgzPHZfAvsdQ+RhbnpC1E2ZxlVEeyZ9nigPY9lReuh7z7vOwyAqz6uHZMRx054BnjuZtThEzP4TMDoDpYkBu0egq9Me0YNvM+Zwy2Xyix7HJMt2edPA5K81/I4DGzEPE3WNffdkPA8G79jWb/Ngr75eXSkPI44XSnkwO/6Gz+oh7ziwjjs5ntZDNeJ40eFBqe/BR/TQ78Tw/yRWrz4cVOonR8zDKDVejJiH+WUeOvMwSnn4beNml4cR8zCjeAjUm1eHQz4W70zXI0RU/v7iHiiYh5n9oD647o0rzUPmYSZ+0RS+fW21f2HMPEzHlq56MPZZYIdp8dVnXz+xxL16yckj5mHeabvGl11b8uWz5MLsWjN6wDyM+PPd1KpomlT6oDx+lc8g9enrNobj3u4L2Eod2g2du/A/6HH6/VY78zDqzh/yj69srWbOWSKPmBZFFVCbrNZptSRiX/FdDpUjy4SgMTEXmWBXNqrefPLa+eahOTeoQDaQpawedArtJJsRUkTwYgtbtt8mJJHXFk7ncFa9udbWHjAPc9ifPczbZi/bg3wY64eHFS2iRQq1pgjkxXSth76PWlM4DxPS84g5X3d4yIXnCfdfPDxgHsb8eHa3L9uF2baLSw/l8XQ57YWHa+3iEfMwPp0uS7OakpL6pjnNzJOHI3hYZCs5PojSNC7qg/deXdnoI86jSEz3m+wNxke7WWdb2Z+0HtbgYdVs4eDD/Wb9Av2kfCrrVF5FtNsv+o2biudhjPM4+Pf8cdIWcfWpQzB71gedh0EUnkfdBZ2HQXQeBlEwDzNKfXjIPMwdeMj5wx14xDzMPXjAPMxd0PMH5AHzMHeh6+fIOp5sOoSHjm5jHEacP4zyWwUPmIe5C2PmYTrmskqNFyPOoxamaxEXIRYu7x2wDurNq0XgOyQMJLHF2mXwJ8AxYFwN2OeAiwH/m8Ay8DsOa8RxUylGnEcphb4vCflteZgutAdE5efDDMmI8welGMBD13xSKfR4gej7mhE9n0RGzMMohZ4/INoDMmIeRin0PArR82pEj5vIiPd3K4WeVyN63ES0B2SQ57rPfElQTtqlL8gpYJo/D3jnQPCvgUmJAY+I7sD9zy/kD0QisFlEwUBH0W/8OyCO4xg4QDunX/X5WH76wDH+OWBcBowrgfP+Ltf45meG9O+hINoDoj0g2gOiPSDaA6I9INoDoj0g2gOiPSDaA6I9INoDoj0g2gOiPSDaA6I9INoD0s+D/Xz08WBOno5VHw+/Cu0B0R4Q7QHRHhDtAdEeEO0B0R4Q7QHRHhDtAdEeEO0B0R4Q7QHRHhDtAdEeEO0B0R4Q7QHRHhDtAdEekNaDhmoPZ/4HBqUJtzZRWvAAAAAASUVORK5CYII=" alt="Box Model Layout">
+        </div>
+    </center>
+</body>
+</html>
